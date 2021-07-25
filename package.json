@@ -8,20 +8,26 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+		"test": "jest src",
+		"test:watch": "npm run test -- --watch"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.13",
 		"@sveltejs/kit": "next",
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/svelte": "^3.0.3",
 		"@types/cookie": "^0.4.0",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
 		"autoprefixer": "^10.3.1",
+		"babel-jest": "^27.0.6",
 		"cssnano": "^5.0.6",
 		"dotenv": "^10.0.0",
 		"eslint": "^7.22.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-svelte3": "^3.2.0",
+		"jest": "^27.0.6",
 		"mongodb": "^4.0.1",
 		"mongoose": "^5.13.3",
 		"postcss": "^8.3.6",
@@ -40,6 +46,7 @@
 		"@fontsource/fira-mono": "^4.2.2",
 		"@lukeed/uuid": "^2.0.0",
 		"@types/mongoose": "^5.11.97",
-		"cookie": "^0.4.1"
+		"cookie": "^0.4.1",
+		"ts-jest": "^27.0.4"
 	}
 }
